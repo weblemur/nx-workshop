@@ -10,7 +10,7 @@ import { formatRating } from '@bg-hoard/store/util-formatters';
 })
 export class AppComponent {
   constructor(private _http: HttpClient, @Inject('baseUrl') private _baseUrl: string) { }
-  title = 'Board Game Hoard';
+  title = 'Big Game Time, m\'Boiz';
   games = this._http.get<Game[]>(`${this._baseUrl}/api/games`);
   formatRating = formatRating;
 }

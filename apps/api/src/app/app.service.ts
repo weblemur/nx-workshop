@@ -4,11 +4,11 @@ import { Game } from '@bg-hoard/util-interface';
 // Mock data layer – exported for testing
 export const games: Game[] = [
   {
-    id: 'settlers-in-the-can',
-    name: 'Settlers in the Can',
+    id: 'settlers-on-the-can',
+    name: 'Settlers on the Can',
     image: '/assets/beans.png', // 'https://media.giphy.com/media/xUNda3pLJEsg4Nedji/giphy.gif',
     description:
-      'Help your bug family claim the best real estate in a spilled can of beans.',
+      'Help your bug family claim the best real estate while taking a dump.',
     price: 35,
     rating: Math.random(),
   },

@@ -24,10 +24,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Board Game Hoard'`, () => {
+  it(`should have as title 'Big Game Time, m\'Boiz'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Board Game Hoard');
+    expect(app.title).toEqual('Big Game Time, m\'Boiz');
   });
 
   it('should render title', () => {
@@ -35,7 +35,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('mat-toolbar').textContent).toContain(
-      'Board Game Hoard'
+      'Big Game Time, m\'Boiz'
     );
   });
 });

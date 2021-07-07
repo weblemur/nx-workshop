@@ -6,6 +6,7 @@ import { MatCardModule } from '@angular/material/card';
 import { StoreUiSharedModule } from '@bg-hoard/store/ui-shared';
 
 import { AppComponent } from './app.component';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,7 +28,10 @@ import { AppComponent } from './app.component';
       { initialNavigation: 'enabled' }
     ),
   ],
-  providers: [],
+  providers: [{
+    provide: 'baseUrl',
+    useValue: environment.apiUrl
+  }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

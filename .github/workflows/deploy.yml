@@ -19,5 +19,5 @@ jobs:
       - uses: bahmutov/npm-install@v1
       - run: npm run nx build store -- --configuration=production
       - run: npm run nx build api -- --configuration=production
-      - run: npm run nx store:deploy
-      - run: npm run nx api:deploy
+      - run: npm run nx deploy store
+      - run: npm run nx deploy api
